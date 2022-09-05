@@ -1,16 +1,18 @@
 #include<stdio.h>
 int main(){
 
-    int a,b;
+    int a,b,c;
 
     printf("Enter a number: ");
     scanf("%d",&a);
 
-    // b= (a==1)?2:(a==2)?3:(a==4)?6:0;
+  
+// using ternary operator
+c = (a==1)?(c=2):(a==2)?(c=3):(a==4)?(c=6):(c=0);
 
-   // b = (a==1)?(b=2):(a==2)?(b=3):(a==4)?(b=6):(b=0);
+printf("The value of c is %d \n ",c);
 
-   // logic of if else
+   // using  if else and else if
     if(a==1){
         b=2;
     }
