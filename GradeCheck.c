@@ -13,8 +13,8 @@ Created By Sagar Nandy
 
 #include<stdio.h>
 int main(){
-    int marks1, marks2, marks3, totalMarks;
-    float percentage;
+    int marks1, marks2, marks3, totalMarks ;
+    int percentage;
 
     printf("Enter marks of 3 subjects: \n");
     scanf("%d %d %d", &marks1, &marks2, &marks3);
@@ -25,6 +25,9 @@ int main(){
 
     printf("Total marks: %d \n", totalMarks);
     printf("Percentage: %f \n", percentage);
+
+
+// using if else and else if
 
     if(percentage >= 90){
         printf("Grade: O \n");
@@ -45,5 +48,35 @@ int main(){
         printf("Grade: D \n");
 }
 
-    return 0;
+
+// using ternary operator
+           (percentage >= 90)?printf("Grade: O \n"):(percentage >= 80 && percentage < 90)?printf("Grade: E \n"):(percentage >= 60 && percentage < 70)?printf("Grade: B \n"):(percentage >= 40 && percentage < 60)?printf("Grade: C \n"): printf("Grade: D \n");
+
+// using switch case
+
+switch(percentage){
+    case 90 ... 100:
+        printf("Grade: O \n");
+        break;
+    case 80 ... 89:
+        printf("Grade: E \n");
+        break;
+    case 70 ... 79:
+        printf("Grade: A \n");
+        break;
+    case 60 ... 69:
+        printf("Grade: B \n");
+        break;
+    case 40 ... 59:
+        printf("Grade: C \n");
+        break;
+    default:
+        printf("Grade: D \n");
+        break;
+}
+
+  
+
+
+return 0;
 }
