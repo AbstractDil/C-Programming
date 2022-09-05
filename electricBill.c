@@ -2,8 +2,6 @@
 
 Name : Sagar Nandy
 
-University Roll Number : 96/AMT 210034
-
 Department Of Mathematics
 
 Electricity  energyCharge  Program Using C 
