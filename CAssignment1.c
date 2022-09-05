@@ -31,6 +31,16 @@ int main(){
     
         // 1. z = a++ - --c - --c - --c
         z = a++ - --c - --c - --c;
+    /* logic of above line
+     z = a++ - --c;
+     a++ = 10, --c = -11
+     
+         a = 11, c = -12
+    a = 12, c = -13
+     z = 33 - (-13)
+     z = 33 + 13
+     z = 46
+   */
         printf("The value of z is %d \n",z);
     
         // 2. z = b++ * c++
