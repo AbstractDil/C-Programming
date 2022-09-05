@@ -32,14 +32,20 @@ int main(){
         // 1. z = a++ - --c - --c - --c
         z = a++ - --c - --c - --c;
     /* logic of above line
-     z = a++ - --c;
+    Step-1 :   Calculate a++ = 10, --c = -11
+    Step-2 :  Then a++ - --c i.e. z= 10 - (-11) = 21
+    Step-3 :  Calculate --c = -12 
+    Step-4 :  Then  a++ - --c i.e. z= 21 - (-12) = 33
+    Step-5 :  Calculate --c = -13 
+    Step-6 : Finally  i.e. z= 33 - (-13)  = 46
+
+    [ z = a++ - --c;
      a++ = 10, --c = -11
-     
-         a = 11, c = -12
+    a = 11, c = -12
     a = 12, c = -13
      z = 33 - (-13)
      z = 33 + 13
-     z = 46
+     z = 46]
    */
         printf("The value of z is %d \n",z);
     
