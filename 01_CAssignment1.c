@@ -27,7 +27,7 @@
 int main(){
     
         int a = 10, b = 20, c = -10, d = 20;
-        int z;
+        int z,z2,z3,z4,z5,z6,z7,z8,z9,z10;
     
         // 1. z = a++ - --c - --c - --c
         z = a++ - --c - --c - --c;
@@ -49,41 +49,39 @@ int main(){
    */
         printf("The value of z is %d \n",z);
     
-        // 2. z = b++ * c++
-        z = b++ * c++;
-        printf("The value of z is %d \n",z);
+       
     
         // 3. z = ++a + a++ + a-- + --a
-        z = ++a + a++ + a-- + --a;
-        printf("The value of z is %d \n",z);
+        z3 = ++a + a++ + a-- + --a;
+        printf("The value of z3 is %d \n",z3);
     
         // 4. z = ++a - (-a) + a++
-        z = ++a - (-a) + a++;
-        printf("The value of z is %d \n",z);
+        z4 = ++a - (-a) + a++;
+        printf("The value of z4 is %d \n",z4);
     
         // 5. z = a == b
-        z = a == b;
-        printf("The value of z is %d \n",z);
+        z5 = a == b;
+        printf("The value of z5 is %d \n",z5);
     
         // 6. z = (a+b) > c
-        z = (a+b) > c;
-        printf("The value of z is %d \n",z);
+        z6 = (a+b) > c;
+        printf("The value of z6 is %d \n",z6);
     
         // 7. z = a<b ? a : b
-        z = a<b ? a : b;
-        printf("The value of z is %d \n",z);
+        z7 = a<b ? a : b;
+        printf("The value of z7 is %d \n",z7);
     
         // 8. z = a>b ? a-b : b-a
-        z = a>b ? a-b : b-a;
-        printf("The value of z is %d \n",z);
+        z8 = a>b ? a-b : b-a;
+        printf("The value of z8 is %d \n",z8);
     
         // 9. z = a>b ? a>c ? a : c : b>c ? b : c
-        z = a>b ? a>c ? a : c : b>c ? b : c;
-        printf("The value of z is %d \n",z);
+        z9 = a>b ? a>c ? a : c : b>c ? b : c;
+        printf("The value of z9 is %d \n",z9);
     
         // 10. z = b==d && c>a
-        z = b==d && c>a;
-        printf("The value of z is %d \n",z);
+        z10 = b==d && c>a;
+        printf("The value of z10 is %d \n",z10);
     
         return 0;
 }
